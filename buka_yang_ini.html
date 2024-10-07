@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- NAVBAR START -->
+
+    <nav class="navbar-container">
+
+        <img onclick="location.reload()" class="logo" src="assets/foto/netflix.png" alt="">
+
+        <div class="navbar-menu">
+
+            <a class="navbar-button" onclick="location.reload()">Beranda</a>
+            <a class="navbar-button" onclick="alertnavbar(1)">Acara TV</a>
+            <a class="navbar-button" onclick="alertnavbar(1)">Film</a>
+            <a class="navbar-button" onclick="alertnavbar(1)">Daftar Saya</a>
+            <a class="navbar-button" href="https://wa.me/6281388692011" target="_blank">Kontak Developer</a>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16" style=" color: white; margin-left: auto; margin-right: 20px; "
+                onclick="alertnavbar(5)">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-bell"
+                viewBox="0 0 16 16" style="color: white;" onclick="alertnavbar(6)">
+                <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-square-fill"
+                viewBox="0 0 16 16" style="color: rgb(255, 2, 2); margin-left: 20px; margin-right: 40px; ">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
+            </svg>
+
+        </div>
+
+    </nav>
+
+    <!-- NAVBAR DONE -->
+
+    <!-- CONTENT START -->
+
+    <main>
+
+        <section class="section-1">
+
+            <h1 class="h1-section1">Happy Birthday Mamah 💌 </h1>
+            <p class="p-section1">ini adalah sedikit persembahan dari kami (anak & menantu) untuk <br> ayah dan mamah
+            </p>
+
+            <div class="play" id="play"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                    fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
+                </svg> Putar </div>
+            </div>
+
+            <div class="info" id="info"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33"
+                    fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16" style="margin-right: 10px;">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                    <path
+                        d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                </svg>Selengkapnya</div>
+            <img id="img1" class="bg-img" src="assets/foto/bg-hero.jpg" alt="" onclick="openFullscreen()">
+
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+
+                    <div class="header-popup">
+                        <img class="header-popup-img" src="assets/foto/headerpopup.jpg" alt="">
+                        <span id="closePopupBtn" class="close-btn">&times;</span>
+                    </div>
+
+                    <div class="text-header-popup">
+                        <h1 class="h1-text-header-popup">Birthday Wishes</h1>
+                        <p>Video-video dibawah ini merupakan video ucapan sekaligus harapan dan doa untuk mamah dan ayah
+                            tercinta
+                        </p>
+                        <br> <br> <br>
+                        <p><span style="color: grey;">Pemeran: </span>Ahmad Aofa Farhan Amien, Nadya Rahmah, Nizma Sina
+                            Annisa, <br> Tubagus Syahrijal Amri dan Tubagus Luthfy Muhammad</p>
+                        <br>
+                        <p><span style="color: grey;">Genre: </span>Drama, Romance</p>
+                    </div>
+
+                    <div class="videos-container">
+                        <h1 style="margin-bottom: 40px; align-self: start; margin-left: 50px; margin-bottom: 20px;">
+                            Episode</h1>
+
+                        <div class="video-container">
+
+                            <div class="video">
+                                <video class="video" controls>
+                                    <source src="assets/video/aa.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="text-video">
+                                <h1>#anakpertamaa</h1>
+                                <p>inframe: Ahmad Aofa Farhan Amien</p>
+                            </div>
+
+                        </div>
+                        <div class="video-container">
+
+                            <div class="video">
+                                <video class="video" controls>
+                                    <source src="assets/video/teh-nadya.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="text-video">
+                                <h1>#menantupertamaa</h1>
+                                <p>inframe: Nadya Rahmah</p>
+                            </div>
+
+                        </div>
+                        <div class="video-container">
+
+                            <div class="video">
+                                <video class="video" controls>
+                                    <source src="assets/video/teteh.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="text-video">
+                                <h1>#anakkeduaa</h1>
+                                <p>inframe: Nizma Sina Annisa</p>
+                            </div>
+
+                        </div>
+                        <div class="video-container">
+
+                            <div class="video">
+                                <video class="video" controls>
+                                    <source src="assets/video/aing.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="text-video">
+                                <h1>#anakketigaa</h1>
+                                <p>inframe: Tubagus Syahrijal Amri</p>
+                            </div>
+
+                        </div>
+
+                        <div class="video-container">
+
+                            <div class="video" onclick="alertnavbar(4)">
+                                <video class="video" controls poster="assets/foto/tupi.jpg" >
+                                </video>
+                            </div>
+                            <div class="text-video">
+                                <h1>#anakterakhir</h1>
+                                <p>inframe: Tubagus Luthfy Muhammad</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="popup2" class="info-popup">
+                <div class="info-popup-content">
+
+                    <h1 class="text-header-popup-info">Background Story</h1>
+                    <div class="text-header-popup2">
+                        <p>Jadi dikarenakan harus berangkat lebih awal ke malang dan tidak bisa hadir di hari ulang
+                            tahun mamah, dan juga april kemarin tidak bisa hadir ketika ayah ulang tahun. Bagus
+                            inisiatif untuk membuat sesuatu yg (semoga) berkesan buat mamah sama ayah, dibuatlah local
+                            web ini dengan waktu pengerjaan yang sangat sedikit, sekitar 2-3 hari.
+                        </p>
+                        <br>
+                        <p>Terimakasih kepada Aa, Teteh, dan Teh Nadya yang telah bersedia membantu dalam pengerjaan
+                            projek ini, dan semoga ayah dan mamah suka dengan persembahan karya kecil-kecilan ini.</p>
+                        <br>
+                        <p>Salam hangat, <br> Tubagus Syahrijal Amri</p>
+                    </div>
+
+                    <div class="footer-popup">
+                        <span id="closePopupBtn2" class="close-btn">&times;</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-2">
+            <h1 style="color: white; margin-bottom: 10px; padding-top: 20px; margin-left: 70px;">Mini Album Aniema
+                Family</h1>
+
+            <div class="slider-container">
+                <button class="arrow arrow-left" onclick="prevSlide()">&#10094;</button>
+                <div class="slider" id="slider">
+                    <div class="slide">
+                        <img class="img-album" src="assets/foto/1.jpg" alt="Gambar 1" onclick="openFullscreen(0)">
+                        <img class="img-album" src="assets/foto/2.jpg" alt="Gambar 2" onclick="openFullscreen(1)">
+                        <img class="img-album" src="assets/foto/3.jpg" alt="Gambar 3" onclick="openFullscreen(2)">
+                        <img class="img-album" src="assets/foto/4.jpg" alt="Gambar 4" onclick="openFullscreen(3)">
+                        <img class="img-album" src="assets/foto/5.jpg" alt="Gambar 5" onclick="openFullscreen(4)">
+                    </div>
+                    <div class="slide">
+                        <img class="img-album" src="assets/foto/6.jpg" alt="Gambar 6" onclick="openFullscreen(5)">
+                        <img class="img-album" src="assets/foto/7.jpg" alt="Gambar 7" onclick="openFullscreen(6)">
+                        <img class="img-album" src="assets/foto/8.jpg" alt="Gambar 8" onclick="openFullscreen(7)">
+                        <img class="img-album" src="assets/foto/9.jpg" alt="Gambar 9" onclick="openFullscreen(8)">
+                        <img class="img-album" src="assets/foto/10.jpg" alt="Gambar 10" onclick="openFullscreen(9)">
+                    </div>
+                    <div class="slide">
+                        <img class="img-album" src="assets/foto/11.jpg" alt="Gambar 11" onclick="openFullscreen(10)">
+                        <img class="img-album" src="assets/foto/12.jpg" alt="Gambar 12" onclick="openFullscreen(11)">
+                        <img class="img-album" src="assets/foto/13.jpg" alt="Gambar 13" onclick="openFullscreen(12)">
+                        <img class="img-album" src="assets/foto/14.jpg" alt="Gambar 14" onclick="openFullscreen(13)">
+                        <img class="img-album" src="assets/foto/15.jpg" alt="Gambar 15" onclick="openFullscreen(14)">
+                    </div>
+                    <div class="slide">
+                        <img class="img-album" src="assets/foto/16.jpg" alt="Gambar 16" onclick="openFullscreen(15)">
+                        <img class="img-album" src="assets/foto/17.jpg" alt="Gambar 17" onclick="openFullscreen(16)">
+                        <img class="img-album" src="assets/foto/18.jpg" alt="Gambar 18" onclick="openFullscreen(17)">
+                        <img class="img-album" src="assets/foto/19.jpg" alt="Gambar 19" onclick="openFullscreen(18)">
+                        <img class="img-album" src="assets/foto/20.jpg" alt="Gambar 20" onclick="openFullscreen(19)">
+                    </div>
+                </div>
+                <button class="arrow arrow-right" onclick="nextSlide()">&#10095;</button>
+            </div>
+
+            <div class="fullscreen-container" id="fullscreenContainer">
+                <span class="fullscreen-close" onclick="closeFullscreen()">&#10006;</span>
+                <button class="fullscreen-arrow fullscreen-arrow-left" onclick="prevFullscreenSlide()">&#10094;</button>
+                <img src="" alt="Fullscreen Image" id="fullscreenImage">
+                <button class="fullscreen-arrow fullscreen-arrow-right"
+                    onclick="nextFullscreenSlide()">&#10095;</button>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- CONTENT DONE -->
+
+    <!-- FOOTER START -->
+
+    <footer class="footer-container">
+        <h1>#madewithlove</h1>
+
+    </footer>
+
+    <div class="whatsapp">
+        <a href="https://wa.me/6281388692011" target="_blank"><img class="logo-wa" src="assets/foto/logo-wa.png" alt="">
+        </a>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
