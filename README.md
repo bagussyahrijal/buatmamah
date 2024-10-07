@@ -6,12 +6,12 @@ Proyek ini dirancang khusus untuk memberikan ucapan ulang tahun yang unik dan be
 
 # Fitur
 Ucapan Ulang Tahun: Berisi pesan ucapan ulang tahun yang hangat dan penuh cinta.
-## Desain Personal: Setiap elemen proyek ini dirancang dengan perhatian khusus untuk mencerminkan kasih sayang yang tulus.
-## Kenangan: Berisi koleksi cerita dan kenangan indah bersama Mamah.
+Desain Personal: Setiap elemen proyek ini dirancang dengan perhatian khusus untuk mencerminkan kasih sayang yang tulus.
+Kenangan: Berisi koleksi cerita dan kenangan indah bersama Mamah.
 
 # Teknologi yang Digunakan
-## Frontend: HTML, CSS, JavaScript (untuk membuat tampilan halaman ucapan yang menarik)
-## Desain Sederhana: Menggunakan layout sederhana agar mudah dibaca dan diakses.
+Frontend: HTML, CSS, JavaScript (untuk membuat tampilan halaman ucapan yang menarik)
+Desain Sederhana: Menggunakan layout sederhana agar mudah dibaca dan diakses.
 
 # Cara Mengakses
 1. Clone repository ini:
